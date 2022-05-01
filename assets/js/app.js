@@ -27,7 +27,7 @@ Hooks.MonacoEditor = {
     mounted() {
         this.edit = monaco.editor.create(this.el, {
             value: this.el.dataset.raw,
-            language: "markdown",
+            language: "sql",
             automaticLayout: true
         });
         this.edit.getModel().onDidChangeContent((e) =>
